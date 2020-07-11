@@ -27,7 +27,7 @@ def terbaru(bot, update):
     bot.send_message(chat_id=chat_id, text=isi_teks, parse_mode="Markdown")
 
 def main():
-    updater = Updater('1015778670:AAEcDmHPW8bdsx88Ai6hZSlE-4MBTGSRJP8')
+    updater = Updater('YOUR_TOKEN')
     dispatch = updater.dispatcher
     dispatch.add_handler(CommandHandler('start', start))
     dispatch.add_handler(CommandHandler('terbaru', terbaru))
